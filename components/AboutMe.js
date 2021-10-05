@@ -41,7 +41,7 @@ export default function AboutMe() {
                 >
                   mail
                 </a>{" "}
-                and I'll get back. I swear.
+                and I'll get back.
               </p>
             </div>
             <div className="mt-8">
@@ -116,7 +116,7 @@ export default function AboutMe() {
               </div>
               <div className="flex flex-row justify-start items-center">
                 <a
-                  href={userData.socialLinks.twitter}
+                  href={userData.socialLinks.instagram}
                   className="flex flex-row items-center space-x-4 group"
                 >
                   <div className="my-4">&rarr;</div>
@@ -144,6 +144,10 @@ export default function AboutMe() {
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
               <img
+                src="https://raw.githubusercontent.com/github/explore/cebd63002168a05a6a642f309227eefeccd92950/topics/flutter/flutter.png"
+                className="h-20 w-20 mx-4 my-4"
+              />
+              <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
                 className="h-20 w-20 mx-4 my-4"
               />
@@ -161,14 +165,6 @@ export default function AboutMe() {
               />
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"
                 className="h-20 w-20 mx-4 my-4"
               />
               <img

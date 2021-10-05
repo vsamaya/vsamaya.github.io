@@ -9,7 +9,7 @@ export default function FavouriteProjects() {
           <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-0 md:text-white dark:text-gray-600 text-center">
             Favourite Projects
           </h1>
-          <Link href="/work">
+          <Link href="/projects">
             <a className="mb-20 md:mb-0 px-8 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -35,17 +35,17 @@ export default function FavouriteProjects() {
         <div className="grid md:grid-cols-3 gap-8 lg:-mt-8 pb-40">
           {/* Single card */}
           <a
-            href="https://tailwindmasterkit.com"
+            href="https://garap.in/"
             className="w-full block col-span-3 shadow-2xl"
           >
             <div className="relative overflow-hidden">
               <img
-                src="/tmk.jpg"
+                src="/garapin.png"
                 alt="portfolio"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                Tailwind Master Kit
+                Garapin
               </h1>
               <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
                 01
@@ -60,12 +60,12 @@ export default function FavouriteProjects() {
             <div className="relative overflow-hidden">
               {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
               <img
-                src="/placeholdertech.png"
+                src="/salvus.png"
                 alt="portfolio"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                PlaceholderTech
+                Sprint Salvus-Mobile Apss
               </h1>
               <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
                 02
@@ -80,12 +80,12 @@ export default function FavouriteProjects() {
             <div className="relative overflow-hidden shadow-2xl">
               {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
               <img
-                src="/portfolio.png"
+                src="/advoshield.png"
                 alt="portfolio"
                 className="transform hover:scale-125 transition duration-2000 ease-out object-cover shadow-2xl"
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                Portfolio
+                AdvoShield
               </h1>
               <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
                 03
