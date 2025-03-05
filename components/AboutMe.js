@@ -1,7 +1,12 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import userData from "@constants/data";
 
 export default function AboutMe() {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    setData(userData);
+  }, []);
+  if(!data) return null;
   return (
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
@@ -15,12 +20,12 @@ export default function AboutMe() {
             className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
             style={{ lineHeight: "3rem" }}
           >
-            {userData.about.title}. Currently working on{" "}
+            {data.about.title}. Currently working on{" "}
             <a
               className="bg-red-500 rounded-md px-2 py-1 text-white"
-              href={userData.about.currentProjectUrl}
+              href={data.about.currentProjectUrl}
             >
-              {userData.about.currentProject} ✈️
+              {data.about.currentProject} ✈️
             </a>
           </p>
         </div>
@@ -36,7 +41,7 @@ export default function AboutMe() {
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 For any sort help / enquiry, shoot a{" "}
                 <a
-                  href={`mailto:${userData.email}`}
+                  href={`mailto:${data.email}`}
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 >
                   mail
@@ -52,7 +57,7 @@ export default function AboutMe() {
                 I'm looking for a job currently, If you see me as a good fit,
                 check my{" "}
                 <a
-                  href={userData.resumeUrl}
+                  href={data.resumeUrl}
                   target="__blank"
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 >
@@ -68,75 +73,94 @@ export default function AboutMe() {
             <div className="mt-4 ml-4">
               <div className="flex flex-row justify-start items-center ">
                 <a
-                  href={userData.socialLinks.facebook}
-                  className="flex flex-row items-center space-x-4 group"
+                    href={data.socialLinks.facebook}
+                    className="flex flex-row items-center space-x-4 group"
                 >
                   <div className="my-4">&rarr;</div>
-                  <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                    <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
-                    Facebook
-                  </p>
+                  <div className="relative">
+                    <p className="text-lg text-gray-500 font-mono dark:text-gray-300">
+                      Facebook
+                    </p>
+                    <div
+                        className="absolute h-0.5 w-full bg-gray-400 bottom-0 opacity-0 group-hover:opacity-100 transform -translate-x-24 group-hover:translate-x-0 transition-opacity transition-transform duration-300"></div>
+                  </div>
                 </a>
               </div>
               <div className="flex flex-row justify-start items-center">
                 <a
-                  href={userData.socialLinks.twitter}
-                  className="flex flex-row items-center space-x-4 group"
+                    href={data.socialLinks.twitter}
+                    className="flex flex-row items-center space-x-4 group"
                 >
                   <div className="my-4">&rarr;</div>
-                  <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                    <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
-                    Twitter
-                  </p>
+                  <div className="relative">
+                    <p className="text-lg text-gray-500 font-mono dark:text-gray-300">
+                      Twitter
+                    </p>
+                    <div
+                        className="absolute h-0.5 w-full bg-gray-400 bottom-0 opacity-0 group-hover:opacity-100 transform -translate-x-24 group-hover:translate-x-0 transition-opacity transition-transform duration-300"></div>
+
+                  </div>
                 </a>
               </div>
               <div className="flex flex-row justify-start items-center">
                 <a
-                  href={userData.socialLinks.github}
-                  className="flex flex-row items-center space-x-4 group"
+                    href={data.socialLinks.github}
+                    className="flex flex-row items-center space-x-4 group"
                 >
                   <div className="my-4">&rarr;</div>
-                  <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                    <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
-                    GitHub
-                  </p>
+                  <div className="relative">
+                    <p className="text-lg text-gray-500 font-mono dark:text-gray-300">
+                      Github
+                    </p>
+                    <div
+                        className="absolute h-0.5 w-full bg-gray-400 bottom-0 opacity-0 group-hover:opacity-100 transform -translate-x-24 group-hover:translate-x-0 transition-opacity transition-transform duration-300"></div>
+
+                  </div>
                 </a>
               </div>
               <div className="flex flex-row justify-start items-center">
                 <a
-                  href={userData.socialLinks.linkedin}
-                  className="flex flex-row items-center space-x-4 group"
+                    href={data.socialLinks.linkedin}
+                    className="flex flex-row items-center space-x-4 group"
                 >
                   <div className="my-4">&rarr;</div>
-                  <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                    <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
-                    LinkedIn
-                  </p>
+                  <div className="relative">
+                    <p className="text-lg text-gray-500 font-mono dark:text-gray-300">
+                      LinkedIn
+                    </p>
+                    <div
+                        className="absolute h-0.5 w-full bg-gray-400 bottom-0 opacity-0 group-hover:opacity-100 transform -translate-x-24 group-hover:translate-x-0 transition-opacity transition-transform duration-300"></div>
+
+                  </div>
                 </a>
               </div>
               <div className="flex flex-row justify-start items-center">
                 <a
-                  href={userData.socialLinks.instagram}
-                  className="flex flex-row items-center space-x-4 group"
+                    href={data.socialLinks.instagram}
+                    className="flex flex-row items-center space-x-4 group"
                 >
                   <div className="my-4">&rarr;</div>
-                  <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                    <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-28 group-hover:translate-x-0 transition duration-300"></div>
-                    Instagram
-                  </p>
+                  <div className="relative">
+                    <p className="text-lg text-gray-500 font-mono dark:text-gray-300">
+                      Instagram
+                    </p>
+                    <div
+                        className="absolute h-0.5 w-full bg-gray-400 bottom-0 opacity-0 group-hover:opacity-100 transform -translate-x-24 group-hover:translate-x-0 transition-opacity transition-transform duration-300"></div>
+
+                  </div>
                 </a>
               </div>
             </div>
           </div>
           {/* Text area */}
           <div className="col-span-1 md:col-span-2">
-            {userData.about.description?.map((desc, idx) => (
-              <p
-                key={idx}
-                className="text-xl text-gray-700 mb-4 dark:text-gray-300 "
-              >
-                {desc}
-              </p>
+            {data.about.description?.map((desc, idx) => (
+                <p
+                    key={idx}
+                    className="text-xl text-gray-700 mb-4 dark:text-gray-300 "
+                >
+                  {desc}
+                </p>
             ))}
 
             <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
