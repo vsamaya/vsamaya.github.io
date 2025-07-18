@@ -27,7 +27,7 @@ const userData = {
       link: "https://advoshield.com/",
       imgUrl: "/advoshield.png",
     },
-    
+
     {
       title: "Logbook KOAS - FK Universitas Diponegoro",
       link: "https://play.google.com/store/apps/details?id=logbook.koas.logbookkoas&hl=in&gl=US",
@@ -47,9 +47,16 @@ const userData = {
   },
   experience: [
     {
+      title: "Fullstack Engineer",
+      company: "Adactive Asia Ltd",
+      year: "2021-now",
+      companyLink: "https://www.adactive.asia/",
+      desc: "Developing and maintaining CMS and signage application for screens across Singapore malls and offices",
+    },
+    {
       title: "Founder and Developer",
       company: "Garapin",
-      year: "2021",
+      year: "2020-2022",
       companyLink: "https://garap.in/",
       desc: "Developed a cloudfactory where people can make everything and customize products to make it their own.",
     },
@@ -83,11 +90,11 @@ const userData = {
     },
   ],
   resumeUrl:
-    "https://drive.google.com/file/d/1cqORZPydDzfJAAEzNYmupp6LDMbhF4vT/view?usp=sharing",
+    "https://drive.google.com/file/d/1FUxxJg-aIyIwvNqYhrUdgbcWLi_j-jIa/view?usp=sharing",
   socialLinks: {
     instagram: "https://instagram.com/v_samaya",
     twitter: "https://twitter.com/v_samaya",
-    linkedin: "https://linkedin.com/in/valentina-samaya-sari-dewi-5743691b7/",
+    linkedin: "https://www.linkedin.com/in/vsamaya/",
     github: "https://github.com/vsamaya",
     facebook: "https://facebook.com/",
   },
