@@ -1,7 +1,7 @@
 const userData = {
   githubUsername: "vsamaya",
   name: "Valentina Samaya Sari Dewi",
-  designation: "Full-Stack Developer",
+  designation: "Software Engineer",
   avatarUrl: "/avatar.jpg",
   email: "val.samaya82@gmail.com",
   phone: "+62 85328245098",
