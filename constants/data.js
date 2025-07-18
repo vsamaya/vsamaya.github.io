@@ -42,8 +42,8 @@ const userData = {
       `The satisfaction of learning new things didn't stop me there. I am always starving to get to know the new technologies and the most effective tools to develop platforms and applications. So, I started to learn, learn, and learn.`,
       `Until now, I am confident enough with my skill to develop any form of applications that're needed, not to mention my eagerness to learn new things also takes part of my skill improvements. Now I'm able to code in Flutter, PHP, Node.js, Express, MySQL, Laravel, CodeIgniter, Typescript, and other programming language and framework as long as I start to learn the syntax and the pattern.`,
     ],
-    currentProject: "Garapin",
-    currentProjectUrl: "https://garap.in/",
+    currentProject: "Adactive Asia Ltd",
+    currentProjectUrl: "https://www.adactive.asia/",
   },
   experience: [
     {
